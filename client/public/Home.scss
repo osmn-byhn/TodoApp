@@ -1,0 +1,191 @@
+.header-form {
+    margin-top: 60px;
+    input {
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-bottom: 1px solid rgb(105, 99, 99);
+        outline: none;
+        width: 40%;
+        margin-left: 28%;
+    }
+    button {
+        background-color: #1d2635;
+        color: white;
+        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 0.5px solid white;
+        margin-left: 25px;
+        border-radius: 20px;
+    }
+}
+.body {
+    margin-top: 1.5%;
+    .notes {
+        .items {
+            width: 47%;
+            margin-left: 27%;
+            margin-top: 0.5vh;
+            padding: 1% 2% 0% 2%;
+            box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+            border-radius: 15px;
+            background: rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255,255,255,0.5);
+            border-left: 1px solid rgba(255,255,255,0.5);
+            backdrop-filter: blur(5px);
+            transition: 300ms;
+            &:hover {
+                transform: scaleX(105%);
+            }
+            p {
+                span {
+                    max-width: 80%;
+                    white-space: nowrap;
+                    overflow:hidden;
+                    text-overflow: ellipsis;
+                        
+                }
+                display: flex;
+                justify-content: space-between;
+                .icons {
+                    .pencil {
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                    .remote {
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+.circles {
+    .circle-1 {
+        z-index:-3;
+        position: fixed;
+        width: 400px;
+        height: 400px;
+        top: 65%;
+        left: -7%;
+        border-radius: 100%;
+        background: -webkit-linear-gradient(135deg, rgba(131,58,180,1) 0%, rgb(45, 33, 226) 50%, rgba(252,69,234,1) 100%);
+    }
+    .circle-2 {
+        z-index:-3;
+        position: fixed;
+        width: 450px;
+        height: 450px;
+        top: 25%;
+        right: -7%;
+        border-radius: 100%;
+        background: -webkit-linear-gradient(45deg, rgb(166, 255, 0) 0%, rgb(214, 95, 16) 50%, rgb(240, 7, 7) 100%);
+    }
+    .circle-3 {
+        z-index:-3;
+        position: fixed;
+        width: 250px;
+        height: 250px;
+        top: 10%;
+        left: -7%;
+        border-radius: 100%;
+        background: -webkit-linear-gradient(45deg, rgb(206, 18, 231) 0%, rgb(226, 17, 174) 40%, rgb(255, 0, 0) 100%);
+    }
+    .circle-4 {
+        z-index:-3;
+        position: fixed;
+        width: 550px;
+        height: 550px;
+        bottom: -30%;
+        left: 40%;
+        border-radius: 100%;
+        background: -webkit-linear-gradient(-130deg, rgb(9, 231, 83) 0%, rgb(0, 162, 255) 40%, rgb(63, 12, 247) 100%);
+    }
+}
+.modal {
+    .modal-dialog {
+        .modal-header {
+            button {
+                color: white;
+            }
+        }
+        .modal-content {
+            background-color: #1e293b;
+            .modal-body {
+                textarea {
+                    color: white;
+                    outline: none;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    .circle-4 {
+        display: none;
+    }
+}
+@media screen and (max-width:740px) {
+    .header-form {
+        input {
+            margin-left: 7.5%;
+            width: 65%;
+        }
+    }
+    .body {
+        margin-top: 5%;
+        margin-left: -3%;
+        .notes {
+            .items {
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+    }
+    .circles {
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: 75%;
+            left: -7%;
+        }
+        .circle-2 {
+            width: 325px;
+            height: 325px;
+            top: 42%;
+            right: -7%;
+        }
+        .circle-3 {
+            width: 250px;
+            height: 250px;
+            top: 20%;
+            left: -7%;
+        }
+    }
+}
+@media screen and (min-width:740px) {
+    .circles {
+        .circle-1 {
+            width: 300px;
+            height: 300px;
+            top: 75%;
+            left: -7%;
+        }
+        .circle-2 {
+            width: 325px;
+            height: 325px;
+            top: 42%;
+            right: -7%;
+        }
+        .circle-3 {
+            width: 250px;
+            height: 250px;
+            top: 20%;
+            left: -7%;
+        }
+    }
+}

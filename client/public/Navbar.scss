@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+$font-1: 'Fredoka One', cursive;
+nav {
+    top: 7px;
+    .item {
+        display: flex;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            div {
+                position:absolute;
+                right: 15px;
+                button {
+                    position: relative;
+                    display: block;
+                    background-color: #1e293b;
+                    color: white;
+                    text-transform: capitalize;
+                    i {
+                        font-size: 25px;
+                        margin-right: 4px;
+                    }
+                    span {
+                        font-size: 17px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            .dropstart {
+                ul {
+                    background-color: #1e293b;
+                    li {
+                        a, span {
+                            color: white;
+                            &:hover {
+                                background-color: #1b2636;
+                            }
+                        }
+                        
+                    }
+                    .fullName-drop {
+                        display: none;
+                        span {
+                            color: white;
+                            &:hover {
+                                background-color: #1b2636;
+                            }
+                        }
+                        hr {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        font-family: $font-1;
+        background: -webkit-linear-gradient(135deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,69,234,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width:740px) {
+    nav {
+        .item {
+            li {
+                .dropstart {
+                    button {
+                        .fullName {
+                            display: none;
+                        }
+                    }
+                    ul {
+                        .fullName-drop {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
