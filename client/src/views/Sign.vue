@@ -18,7 +18,7 @@
         }
         if (validRegexEmail.test(email.value)) {
             if (validRegexPassword.test(password.value)) {
-                await axios.post('http://localhost:2020/signup', user)
+                await axios.post('https://todo-app-mevn.onrender.com/signup', user)
                 .then( res => {
                     if (res.status === 200) {
                         function pushing() {

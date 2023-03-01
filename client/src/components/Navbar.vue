@@ -9,7 +9,7 @@
         if (localStorage.getItem('token') === null) {
             router.push('/')
         } else {
-            axios.get('http://localhost:2020/user', { headers: {token: localStorage.getItem('token')}})
+            axios.get('https://todo-app-mevn.onrender.com/user', { headers: {token: localStorage.getItem('token')}})
                 .then(res => {
                     fullName.value = res.data.user.fullName
                 })

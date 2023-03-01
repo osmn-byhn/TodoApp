@@ -40,7 +40,7 @@
     }
     
     async function updateItem(select) {
-        const response = await axios.put(`http://localhost:2020/todo/${localStorage.getItem('token')}/` + select._id, {
+        const response = await axios.put(`https://todo-app-mevn.onrender.com/todo/${localStorage.getItem('token')}/` + select._id, {
             description: editedDescription.value
         })
         unselect()
@@ -48,7 +48,7 @@
     }
     
     async function removeItem(item, i) {
-        await axios.delete(`http://localhost:2020/todo/${localStorage.getItem('token')}/` + item._id)
+        await axios.delete(`https://todo-app-mevn.onrender.com/todo/${localStorage.getItem('token')}/` + item._id)
         items.value.splice(i, 1)
     }
 </script>

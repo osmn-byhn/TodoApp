@@ -11,7 +11,7 @@
             email: email.value,
             password: password.value
         }
-        await axios.post('http://localhost:2020/login', user)
+        await axios.post('https://todo-app-mevn.onrender.com/login', user)
             .then( res => {
                 if (res.status === 200) {
                     localStorage.setItem('token', res.data.token)
