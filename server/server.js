@@ -3,8 +3,9 @@ const cors = require('cors')
 const mongoose = require('mongoose')
 const morgan = require('morgan')
 const bodyParser = require('body-parser')
-const config = require('./config')
+const config = require('./server/config')
 const app = express()
+const path = require('path')
 
 const signRouter = require('./router/signRouter')
 const loginRouter = require('./router/loginRouter')
@@ -20,6 +21,8 @@ app.use('/signup', signRouter)
 app.use('/login', loginRouter)
 app.use('/todo', todoRouter)
 app.use('/user', userRouter)
+
+
 
 
 app.listen(process.env.PORT, () => {
