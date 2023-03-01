@@ -40,7 +40,6 @@ $font-1: 'Poppins', sans-serif;
         color: red;
         text-align: center;
     }
-    
     #signup {
         font-weight: 600;
         width: 100%;
@@ -56,11 +55,9 @@ $font-1: 'Poppins', sans-serif;
         }
     }
 }
-
 .popup-none {
     display: none;
 }
-
 .popup {
     position: relative;
     width: 70%;
@@ -89,9 +86,7 @@ $font-1: 'Poppins', sans-serif;
             text-align: center;
             font-size: 21px;
             font-family: $font-1;
-
-        }
-        
+        }   
     }
     .bar {
         position:absolute;
@@ -104,8 +99,7 @@ $font-1: 'Poppins', sans-serif;
         animation-name: loading;
         animation-duration: 7s;
         animation-timing-function: linear;
-    }
-    
+    } 
 }
 .login {
     p {
@@ -124,5 +118,4 @@ $font-1: 'Poppins', sans-serif;
         height: 0;
         background-color: red;
     }
-    
 }

@@ -102,8 +102,6 @@
         </div>
         <div class="bar"></div>
     </div>
-
-    
 </template>
 
 <style scoped lang="scss">

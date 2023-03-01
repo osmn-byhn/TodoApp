@@ -38,7 +38,7 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li class="fullName-drop">
-                            <span class="dropdown-item">Osman Beyhan</span>
+                            <span class="dropdown-item">{{ fullName }}</span>
                             <hr>
                         </li>
                         <li><a class="dropdown-item" href="#">User Setting</a></li>
