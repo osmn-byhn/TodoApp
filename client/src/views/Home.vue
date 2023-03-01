@@ -12,7 +12,7 @@
         if (localStorage.getItem('token') === null) {
             router.push('/')
         } else {
-            axios.get(`http://localhost:2020/todo/${localStorage.getItem('token')}`)
+            axios.get(`https://todo-app-mevn.onrender.com/todo/${localStorage.getItem('token')}`)
                 .then(res => {
                     items.value = res.data.user.todoList
                 })
@@ -22,7 +22,7 @@
         await getItems()
     })
     async function addItem() {
-        const response = await axios.post(`http://localhost:2020/todo/${localStorage.getItem('token')}`, {
+        const response = await axios.post(`https://todo-app-mevn.onrender.com/todo/${localStorage.getItem('token')}`, {
             description: description.value
         })
         items.value.push(response.data)
